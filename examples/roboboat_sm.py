@@ -232,7 +232,7 @@ def main():
         smach.StateMachine.add('passing_through_NavChan', passing_through_NavChan(), {'passing_through_NavChan':'find_ObChan_start'})
 
         ####################### Starting the Obstacle channel Containers ########################################
-        #########################################################################################################
+        ########################################################################################################
 
         smach.StateMachine.add('find_ObChan_start', find_ObChan_start(), transitions= {'not_found':'cannot_find_ObChan', 'found':'find_middle_ObChan'})
 
